@@ -2,7 +2,9 @@
 
 A minimal, single-file JavaScript to-do list application that runs directly in your browser. Built with vanilla JS and localStorage for persistence.
 
+
 ---
+
 
 ## ✨ Features
 
@@ -12,15 +14,20 @@ A minimal, single-file JavaScript to-do list application that runs directly in y
 - ✅ **Persistent Storage** - All data saved to browser localStorage
 - ✅ **Clean UI** - Simple, responsive design
 
+
 ---
+
 
 ## 📁 Project Structure
 
-your-repo-name/
+
+AI-generated-simplest-to-do-app/
 ├── app.js          # Main application logic
 └── index.html      # HTML template (optional)
 
+
 ---
+
 
 ## 🚀 Getting Started
 
@@ -28,7 +35,9 @@ your-repo-name/
 2. **Open `index.html` in your browser**
 3. **Start adding tasks!**
 
+
 ---
+
 
 ## 🛠️ Tech Stack
 
@@ -40,9 +49,13 @@ your-repo-name/
 
 No build tools, frameworks, or dependencies required!
 
+
 ---
 
+
 ## 🔧 Configuration
+
+
 |Browser Compatibility|
 |-----------|
 |✅ Chrome (recommended)|
@@ -51,43 +64,51 @@ No build tools, frameworks, or dependencies required!
 |✅ Edge|
 |⚠️ Internet Explorer 11+ (limited support)|
 
+
 ### LocalStorage Limits:
+
 
 |Browser|	Max Storage|
 |-----------|-----------|
 |Chrome/Firefox/Safari/Edge|	~5-10 MB|
 |Mobile browsers|	Varies by vendor|
 
+
 ---
 
-## 📊 Usage Examples
 
+## 📊 Usage Examples
 Adding Tasks
 
+
+```
 // Via API (if exposed)
-
 addTodo("Buy groceries");
-
 addTodo("Complete project");
+```
+
 
 Checking Status
 
+```
 // Get all tasks
-
 const todos = JSON.parse(localStorage.getItem('todos')) || [];
 
 // Check if task exists
-
 const found = todos.find(t => t.text === "Task name");
-
 console.log(found.done); // true/false
+```
+
 
 ---
+
 
 ## 📝 License
 MIT License - Feel free to use, modify, and distribute.
 
+
 ---
+
 
 ## 👨‍💻 Contributing
 No contribution expected! This is a simple project to test qwen3.5-4b-claude-4.6-opus-reasoning-distilled-v2 LLM model.
