@@ -43,31 +43,43 @@ No build tools, frameworks, or dependencies required!
 ---
 
 ## 🔧 Configuration
-Browser Compatibility
-✅ Chrome (recommended)
-✅ Firefox
-✅ Safari
-✅ Edge
-⚠️ Internet Explorer 11+ (limited support)
-LocalStorage Limits
-Browser	Max Storage
-Chrome/Firefox/Safari/Edge	~5-10 MB
-Mobile browsers	Varies by vendor
+|Browser Compatibility|
+|-----------|
+|✅ Chrome (recommended)|
+|✅ Firefox|
+|✅ Safari|
+|✅ Edge|
+|⚠️ Internet Explorer 11+ (limited support)|
+
+### LocalStorage Limits:
+
+|Browser|	Max Storage|
+|-----------|
+|Chrome/Firefox/Safari/Edge|	~5-10 MB|
+|Mobile browsers|	Varies by vendor|
 
 ---
 
 ## 📊 Usage Examples
+
 Adding Tasks
+
 // Via API (if exposed)
+
 addTodo("Buy groceries");
+
 addTodo("Complete project");
+
 Checking Status
 
 // Get all tasks
+
 const todos = JSON.parse(localStorage.getItem('todos')) || [];
 
 // Check if task exists
+
 const found = todos.find(t => t.text === "Task name");
+
 console.log(found.done); // true/false
 
 ---
