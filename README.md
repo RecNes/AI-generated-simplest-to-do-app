@@ -54,7 +54,7 @@ No build tools, frameworks, or dependencies required!
 ### LocalStorage Limits:
 
 |Browser|	Max Storage|
-|-----------|
+|-----------|-----------|
 |Chrome/Firefox/Safari/Edge|	~5-10 MB|
 |Mobile browsers|	Varies by vendor|
 
