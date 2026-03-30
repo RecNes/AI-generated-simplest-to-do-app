@@ -1,5 +1,3 @@
-// SIMPLE TODO LIST APP
-
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
 function save() {
@@ -16,7 +14,7 @@ function render() {
                        ${todo.done ? 'checked' : ''} 
                        onchange="toggle(${i})">
                 <span class="${todo.done ? 'done' : ''}">${escapeHtml(todo.text)}</span>
-                <button onclick="delete(${i})">×</button>
+                <button onclick="removeTodo(${i})">×</button>
             </div>
         `).join('');
     }
@@ -36,7 +34,7 @@ function toggle(index) {
     render();
 }
 
-function delete(index) {
+function removeTodo(index) {
     todos.splice(index, 1);
     save();
     render();
@@ -48,7 +46,6 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
-// Initialize UI
 document.getElementById('todo-input').addEventListener('keypress', e => {
     if (e.key === 'Enter') addTodo(document.getElementById('todo-input').value);
 });
