@@ -31,13 +31,13 @@ your-repo-name/
 ---
 
 ## 🛠️ Tech Stack
-|-----------|-----------|
+
 |Technology |	Purpose |
 |-----------|-----------|
 |Vanilla JavaScript	| Core logic|
 |localStorage |	Data persistence|
 |HTML5/CSS3|	Basic styling|
-|-----------|-----------|
+
 No build tools, frameworks, or dependencies required!
 
 ---
