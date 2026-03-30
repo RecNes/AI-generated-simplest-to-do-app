@@ -21,9 +21,11 @@ A minimal, single-file JavaScript to-do list application that runs directly in y
 ## 📁 Project Structure
 
 
+```
 AI-generated-simplest-to-do-app/
 ├── app.js          # Main application logic
 └── index.html      # HTML template (optional)
+```
 
 
 ---
